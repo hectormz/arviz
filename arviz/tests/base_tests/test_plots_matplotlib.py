@@ -29,6 +29,7 @@ from ...plots import (
     plot_loo_pit,
     plot_mcse,
     plot_pair,
+    plot_pair_extended,
     plot_parallel,
     plot_posterior,
     plot_ppc,
