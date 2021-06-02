@@ -53,7 +53,7 @@ def plot_func_posterior(data, ax=None, np_fun=np.diff, **kwargs):
         >>>                     rope=(-3, 3))
 
     """
-    if isinstance(data, xr.core.dataarray.DataArray):
+    if isinstance(data, xr.DataArray):
         var_names, data = xarray_to_ndarray(data)
         data = np_fun(data, axis=0).squeeze()
     else:
