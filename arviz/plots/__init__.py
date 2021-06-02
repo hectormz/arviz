@@ -23,7 +23,7 @@ from .rankplot import plot_rank
 from .separationplot import plot_separation
 from .traceplot import plot_trace
 from .violinplot import plot_violin
-from .pairplot_extended import plot_pair_extended, plot_func_posterior
+from .pairextendedplot import plot_pair_extended, plot_func_posterior
 
 
 __all__ = [
