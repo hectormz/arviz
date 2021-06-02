@@ -5,10 +5,9 @@ import xarray as xr
 from matplotlib.ticker import NullFormatter
 
 from ..data import convert_to_dataset, convert_to_inference_data
-from ..sel_utils import xarray_to_ndarray
 from ..utils import _var_names, get_coords
 from .pairplot import plot_pair
-from .plot_utils import _scale_fig_size
+from .plot_utils import _scale_fig_size, xarray_to_ndarray
 from .posteriorplot import plot_posterior
 
 
