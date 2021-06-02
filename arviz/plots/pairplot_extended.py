@@ -206,9 +206,9 @@ def plot_pair_extended(
     if numvars < 2:
         raise Exception("Number of variables to be plotted must be 2 or greater.")
 
-    (figsize, _, _, _, _, _) = _scale_fig_size(figsize, textsize, numvars, numvars)
+    (figsize, __, __, __, __, _) = _scale_fig_size(figsize, textsize, numvars, numvars)
     if ax is None:
-        _, ax = plt.subplots(
+        __, ax = plt.subplots(
             numvars, numvars, figsize=figsize, constrained_layout=True,
             #  sharex="col", sharey="row"
         )
