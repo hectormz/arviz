@@ -41,7 +41,7 @@ def plot_func_posterior(data, ax=None, np_fun=np.diff, **kwargs):
         >>> az.plot_func_posterior(centered,
         >>>                     var_names=['theta'],
         >>>                     coords=coords)
-    
+
     Posterior Difference Plot with ROPE
 
     .. plot::
@@ -64,7 +64,7 @@ def plot_func_posterior(data, ax=None, np_fun=np.diff, **kwargs):
     var_names = [name.replace("\n", "_") for name in var_names]
     func_name = np_fun.__name__
     xlabel = "{}({},\n{})".format(func_name, *var_names)
-    if ax == None:
+    if ax is None:
         ax = plt.gca()
     plot_posterior({xlabel: data}, ax=ax, **kwargs)
     return ax
@@ -167,7 +167,7 @@ def plot_pair_extended(
         >>>                          "alpha": 0.6}},
         >>>                     diag_fun=plot_name,
         >>>                     upper_fun=az.plot_pair,
-        >>>                     upper_kwargs={"kind": "kde", "fill_last": False})   
+        >>>                     upper_kwargs={"kind": "kde", "fill_last": False})
     """
 
     if coords is None:
