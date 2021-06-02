@@ -20,6 +20,7 @@ from .ppcplot import plot_ppc
 from .rankplot import plot_rank
 from .traceplot import plot_trace
 from .violinplot import plot_violin
+from .pairplot_extended import plot_pair_extended, plot_func_posterior
 
 
 __all__ = [
@@ -44,6 +45,11 @@ __all__ = [
     "plot_posterior",
     "plot_ppc",
     "plot_rank",
+<<<<<<< Updated upstream
     "plot_trace",
     "plot_violin",
+=======
+    "plot_pair_extended",
+    "plot_func_posterior",
+>>>>>>> Stashed changes
 ]

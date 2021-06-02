@@ -40,6 +40,7 @@ from ..plots import (
     plot_elpd,
     plot_loo_pit,
     plot_mcse,
+    plot_pair_extended,
 )
 from ..plots.kdeplot import _cov
 
