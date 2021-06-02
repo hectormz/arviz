@@ -167,8 +167,7 @@ def plot_pair_extended(
         >>>                          "alpha": 0.6}},
         >>>                     diag_fun=plot_name,
         >>>                     upper_fun=az.plot_pair,
-        >>>                     upper_kwargs={"kind": "kde", "fill_last": False})
-    
+        >>>                     upper_kwargs={"kind": "kde", "fill_last": False})   
     """
 
     if coords is None:
@@ -186,7 +185,6 @@ def plot_pair_extended(
     if labels not in ("edges", "all", "none"):
         raise ValueError("labels must be one of (edges, all, none)")
 
-
     # Get posterior draws and combine chains
     data = convert_to_inference_data(data)
     posterior_data = convert_to_dataset(data, group="posterior")
@@ -203,7 +201,10 @@ def plot_pair_extended(
     (figsize, __, __, __, __, _) = _scale_fig_size(figsize, textsize, numvars, numvars)
     if ax is None:
         __, ax = plt.subplots(
-            numvars, numvars, figsize=figsize, constrained_layout=True,
+            numvars,
+            numvars,
+            figsize=figsize,
+            constrained_layout=True,
             #  sharex="col", sharey="row"
         )
     # x_offset = y_offset = 0
