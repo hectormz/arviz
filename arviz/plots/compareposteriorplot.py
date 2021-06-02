@@ -59,9 +59,7 @@ def plot_dist_diff(data, var_names, coords, textsize=None, figsize=None, ax=None
 
     assert len(var_dims_list) == 2, "Too many parameters provided"
 
-    (figsize, ax_labelsize, _, xt_labelsize, _, _) = _scale_fig_size(
-        figsize, textsize, 1, 1
-    )
+    (figsize, ax_labelsize, _, xt_labelsize, _, _) = _scale_fig_size(figsize, textsize, 1, 1)
 
     if ax is None:
         fig, ax = plt.subplots(figsize=figsize, constrained_layout=True)
@@ -80,9 +78,9 @@ def plot_dist_diff(data, var_names, coords, textsize=None, figsize=None, ax=None
     else:
         coord_1_suff = ""
 
-    diff_DataArray = data.posterior[var_name_0].sel(coord_0) - data.posterior[
-        var_name_1
-    ].sel(coord_1)
+    diff_DataArray = data.posterior[var_name_0].sel(coord_0) - data.posterior[var_name_1].sel(
+        coord_1
+    )
 
     diff_var_name = f"{var_name_0}{coord_0_suff} - {var_name_1}{coord_1_suff}"
 
@@ -90,8 +88,17 @@ def plot_dist_diff(data, var_names, coords, textsize=None, figsize=None, ax=None
     plot_posterior(data, var_names=[diff_var_name], ax=ax, **kwargs)
 
 
-def pair_plot_extended_Q(data, var_names, coords=None, lower_fun=plot_pair, upper_fun=None, diag_fun=plot_posterior,
-                       lower_kwargs=None, upper_kwargs=None, diag_kwargs=None):
+def pair_plot_extended_Q(
+    data,
+    var_names,
+    coords=None,
+    lower_fun=plot_pair,
+    upper_fun=None,
+    diag_fun=plot_posterior,
+    lower_kwargs=None,
+    upper_kwargs=None,
+    diag_kwargs=None,
+):
     if coords is None:
         coords = {}
 
@@ -128,12 +135,16 @@ def pair_plot_extended_Q(data, var_names, coords=None, lower_fun=plot_pair, uppe
             ax = axes[j, i]
             if i < j:
                 if lower_fun is not None:
-                    lower_fun(data, var_names=sub_var_name, coords=sub_coords, ax=ax, **lower_kwargs)
+                    lower_fun(
+                        data, var_names=sub_var_name, coords=sub_coords, ax=ax, **lower_kwargs
+                    )
                 else:
                     ax.axis("off")
             elif i > j:
                 if upper_fun is not None:
-                    upper_fun(data, var_names=sub_var_name, coords=sub_coords, ax=ax, **upper_kwargs)
+                    upper_fun(
+                        data, var_names=sub_var_name, coords=sub_coords, ax=ax, **upper_kwargs
+                    )
                 else:
                     ax.axis("off")
             elif i == j:
@@ -180,7 +191,7 @@ def plot_pair_extended(
     upper_kwargs=None,
     diag_kwargs=None,
     figsize=None,
-    labels='edges',
+    labels="edges",
     ax=None,
 ):
     if coords is None:
@@ -210,7 +221,9 @@ def plot_pair_extended(
 
     (figsize, _, _, _, _, _) = _scale_fig_size(figsize, None, numvars, numvars)
     if ax is None:
-        _, ax = plt.subplots(numvars, numvars, figsize=figsize, constrained_layout=True, sharex='col', sharey='row')
+        _, ax = plt.subplots(
+            numvars, numvars, figsize=figsize, constrained_layout=True, sharex="col", sharey="row"
+        )
 
     for i in range(numvars):
         for j in range(numvars):
@@ -220,7 +233,7 @@ def plot_pair_extended(
                     lower_fun(
                         {flat_var_names[j]: _posterior[j], flat_var_names[i]: _posterior[i]},
                         ax=ax[i, j],
-                        **lower_kwargs
+                        **lower_kwargs,
                     )
                 else:
                     ax[i, j].axis("off")
@@ -229,7 +242,7 @@ def plot_pair_extended(
                     upper_fun(
                         {flat_var_names[j]: _posterior[j], flat_var_names[i]: _posterior[i]},
                         ax=ax[i, j],
-                        **upper_kwargs
+                        **upper_kwargs,
                     )
                 else:
                     ax[i, j].axis("off")
@@ -239,9 +252,9 @@ def plot_pair_extended(
                 else:
                     ax[i, j].axis("off")
 
-            if (i + 1 != numvars and labels=="edges") or labels=="none":
+            if (i + 1 != numvars and labels == "edges") or labels == "none":
                 ax[i, j].axes.get_xaxis().set_major_formatter(NullFormatter())
                 ax[i, j].set_xlabel("")
-            if (j != 0 and labels=="edges") or labels=="none":
+            if (j != 0 and labels == "edges") or labels == "none":
                 ax[i, j].axes.get_yaxis().set_major_formatter(NullFormatter())
                 ax[i, j].set_ylabel("")
