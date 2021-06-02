@@ -1,20 +1,14 @@
 """Plot a flexible comparison of sampled parameters"""
-import warnings
-import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.ticker import NullFormatter
-from mpl_toolkits.axes_grid1 import make_axes_locatable
-
-import matplotlib.pyplot as plt
-from matplotlib.ticker import NullFormatter
 import numpy as np
 import xarray as xr
-
+from matplotlib.ticker import NullFormatter
 
 from ..data import convert_to_dataset, convert_to_inference_data
-from .plot_utils import _scale_fig_size, get_coords, purge_duplicates, xarray_to_ndarray
-from ..utils import _var_names
+from ..sel_utils import xarray_to_ndarray
+from ..utils import _var_names, get_coords
 from .pairplot import plot_pair
+from .plot_utils import _scale_fig_size
 from .posteriorplot import plot_posterior
 
 
