@@ -101,7 +101,7 @@ def ess(
         `ress = ess / n`
     prob : float, or tuple of two floats, optional
         probability value for "tail", "quantile" or "local" ess functions.
-    dask_kwargs : dict, optional
+    dask_kwargs : Dict, optional
         Dask related kwargs passed to :func:`~arviz.wrap_xarray_ufunc`.
 
     Returns
@@ -236,7 +236,7 @@ def rhat(data, *, var_names=None, method="rank", dask_kwargs=None):
         - "folded"
         - "z_scale"
         - "identity"
-    dask_kwargs : dict, optional
+    dask_kwargs : Dict, optional
         Dask related kwargs passed to :func:`~arviz.wrap_xarray_ufunc`.
 
     Returns
@@ -343,7 +343,7 @@ def mcse(data, *, var_names=None, method="mean", prob=None, dask_kwargs=None):
 
     prob : float
         Quantile information.
-    dask_kwargs : dict, optional
+    dask_kwargs : Dict, optional
         Dask related kwargs passed to :func:`~arviz.wrap_xarray_ufunc`.
 
     Returns

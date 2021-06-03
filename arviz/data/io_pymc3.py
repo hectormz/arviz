@@ -550,19 +550,19 @@ def from_pymc3(
     trace : pymc3.MultiTrace, optional
         Trace generated from MCMC sampling. Output of
         :py:func:`pymc3:pymc3.sampling.sample`.
-    prior : dict, optional
+    prior : Dict, optional
         Dictionary with the variable names as keys, and values numpy arrays
         containing prior and prior predictive samples.
-    posterior_predictive : dict, optional
+    posterior_predictive : Dict, optional
         Dictionary with the variable names as keys, and values numpy arrays
         containing posterior predictive samples.
     log_likelihood : bool or array_like of str, optional
         List of variables to calculate `log_likelihood`. Defaults to True which calculates
         `log_likelihood` for all observed variables. If set to False, log_likelihood is skipped.
         Defaults to the value of rcParam ``data.log_likelihood``.
-    coords : dict of {str: array-like}, optional
+    coords : Dict of {str: array-like}, optional
         Map of coordinate names to coordinate values
-    dims : dict of {str: list of str}, optional
+    dims : Dict of {str: list of str}, optional
         Map of variable names to the coordinate names to use to index its dimensions.
     model : pymc3.Model, optional
         Model used to generate ``trace``. It is not necessary to pass ``model`` if in

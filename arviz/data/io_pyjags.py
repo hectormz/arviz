@@ -283,7 +283,7 @@ def _convert_arviz_dict_to_pyjags_dict(
 
     Parameters
     ----------
-    samples: dict of {str : array_like}
+    samples: Dict of {str : array_like}
         a dictionary mapping variable names to NumPy arrays with shape
         (number_of_chains, chain_length, parameter_dimension)
 
@@ -329,28 +329,28 @@ def from_pyjags(
 
     Parameters
     ----------
-    posterior: dict of {str : array_like}, optional
+    posterior: Dict of {str : array_like}, optional
         a dictionary mapping variable names to NumPy arrays containing
         posterior samples with shape
         (parameter_dimension, chain_length, number_of_chains)
 
-    prior: dict of {str : array_like}, optional
+    prior: Dict of {str : array_like}, optional
         a dictionary mapping variable names to NumPy arrays containing
         prior samples with shape
         (parameter_dimension, chain_length, number_of_chains)
 
-    log_likelihood: dict of {str: str}, list of str or str, optional
+    log_likelihood: Dict of {str: str}, list of str or str, optional
         Pointwise log_likelihood for the data. log_likelihood is extracted from the
         posterior. It is recommended to use this argument as a dictionary whose keys
         are observed variable names and its values are the variables storing log
         likelihood arrays in the JAGS code. In other cases, a dictionary with keys
         equal to its values is used.
 
-    coords: dict[str, Iterable]
+    coords: Dict[str, Iterable]
         A dictionary containing the values that are used as index. The key
         is the name of the dimension, the values are the index values.
 
-    dims: dict[str, List(str)]
+    dims: Dict[str, List(str)]
         A mapping from variables to a list of coordinate names for the variable.
 
     save_warmup : bool, optional

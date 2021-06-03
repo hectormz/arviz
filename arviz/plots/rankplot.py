@@ -94,16 +94,16 @@ def plot_rank(
         its own array of plot areas (and return it).
     backend: str, optional
         Select plotting backend {"matplotlib","bokeh"}. Default "matplotlib".
-    ref_line_kwargs : dict, optional
+    ref_line_kwargs : Dict, optional
         Reference line keyword arguments, passed to :meth:`mpl:matplotlib.axes.Axes.axhline` or
         :meth:`bokeh:bokeh.model.Span`.
-    bar_kwargs : dict, optional
+    bar_kwargs : Dict, optional
         Bars keyword arguments, passed to :meth:`mpl:matplotlib.axes.Axes.bar` or
         :meth:`bokeh:bokeh.plotting.figure.Figure.vbar`.
-    vlines_kwargs : dict, optional
+    vlines_kwargs : Dict, optional
         Vlines keyword arguments, passed to :meth:`mpl:matplotlib.axes.Axes.vlines` or
         :meth:`bokeh:bokeh.plotting.figure.Figure.multi_line`.
-    marker_vlines_kwargs : dict, optional
+    marker_vlines_kwargs : Dict, optional
         Marker for the vlines keyword arguments, passed to :meth:`mpl:matplotlib.axes.Axes.plot` or
         :meth:`bokeh:bokeh.plotting.figure.Figure.circle`.
     backend_kwargs: bool, optional

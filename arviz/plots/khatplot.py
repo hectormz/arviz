@@ -80,7 +80,7 @@ def plot_khat(
         be chosen based on autoscaling for figsize.
     ax: axes, optional
         Matplotlib axes or bokeh figures.
-    hlines_kwargs: dictionary, optional
+    hlines_kwargs: Dict, optional
         Additional keywords passed to ax.hlines.
     backend: str, optional
         Select plotting backend {"matplotlib","bokeh"}. Default "matplotlib".

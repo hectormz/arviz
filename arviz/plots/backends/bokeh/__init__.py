@@ -62,7 +62,7 @@ def create_axes_grid(
         Share y axis between the figures
     polar : bool
         Set up polar coordinates plot
-    backend_kwargs: dict, optional
+    backend_kwargs: Dict, optional
         kwargs for backend figure.
 
     Returns
@@ -125,8 +125,8 @@ def dealiase_sel_kwargs(kwargs, prop_dict, idx):
 
     Parameters
     ----------
-    kwargs : dict
-    prop_dict : dict of {str : array_like}
+    kwargs : Dict
+    prop_dict : Dict of {str : array_like}
     idx : int
     """
     return {

@@ -44,21 +44,21 @@ class PyroConverter:
         ----------
         posterior : pyro.infer.MCMC
             Fitted MCMC object from Pyro
-        prior: dict
+        prior: Dict
             Prior samples from a Pyro model
-        posterior_predictive : dict
+        posterior_predictive : Dict
             Posterior predictive samples for the posterior
-        predictions: dict
+        predictions: Dict
             Out of sample predictions
-        constant_data: dict
+        constant_data: Dict
             Dictionary containing constant data variables mapped to their values.
-        predictions_constant_data: dict
+        predictions_constant_data: Dict
             Constant data used for out-of-sample predictions.
-        coords : dict[str] -> list[str]
+        coords : Dict[str] -> list[str]
             Map of dimensions to coordinates
-        dims : dict[str] -> list[str]
+        dims : Dict[str] -> list[str]
             Map variable names to their coordinates
-        pred_dims: dict
+        pred_dims: Dict
             Dims for predictions data. Map variable names to their coordinates.
         num_chains: int
             Number of chains used for sampling. Ignored if posterior is present.
@@ -295,24 +295,24 @@ def from_pyro(
     ----------
     posterior : pyro.infer.MCMC
         Fitted MCMC object from Pyro
-    prior: dict
+    prior: Dict
         Prior samples from a Pyro model
-    posterior_predictive : dict
+    posterior_predictive : Dict
         Posterior predictive samples for the posterior
     log_likelihood : bool, optional
         Calculate and store pointwise log likelihood values. Defaults to the value
         of rcParam ``data.log_likelihood``.
-    predictions: dict
+    predictions: Dict
         Out of sample predictions
-    constant_data: dict
+    constant_data: Dict
         Dictionary containing constant data variables mapped to their values.
-    predictions_constant_data: dict
+    predictions_constant_data: Dict
         Constant data used for out-of-sample predictions.
-    coords : dict[str] -> list[str]
+    coords : Dict[str] -> list[str]
         Map of dimensions to coordinates
-    dims : dict[str] -> list[str]
+    dims : Dict[str] -> list[str]
         Map variable names to their coordinates
-    pred_dims: dict
+    pred_dims: Dict
         Dims for predictions data. Map variable names to their coordinates.
     num_chains: int
         Number of chains used for sampling. Ignored if posterior is present.

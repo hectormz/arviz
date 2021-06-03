@@ -90,9 +90,9 @@ def plot_violin(
     ax: numpy array-like of matplotlib axes or bokeh figures, optional
         A 2D array of locations into which to plot the densities. If not supplied, Arviz will create
         its own array of plot areas (and return it).
-    shade_kwargs: dicts, optional
+    shade_kwargs: Dicts, optional
         Additional keywords passed to `fill_between`, or `barh` to control the shade.
-    rug_kwargs: dict
+    rug_kwargs: Dict
         Keywords passed to the rug plot. If true only the righ half side of the violin will be
         plotted.
     backend: str, optional

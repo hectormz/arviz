@@ -39,14 +39,14 @@ class SamplingWrapper:
         List of variable names to unpack as ``args`` for ``log_lik_fun``. Each string in
         the list will be used to retrieve a DataArray from the Dataset in the posterior
         group and passed to ``log_lik_fun``.
-    sample_kwargs : dict, optional
+    sample_kwargs : Dict, optional
         Sampling kwargs are stored as class attributes for their usage in the ``sample``
         method.
-    idata_kwargs : dict, optional
+    idata_kwargs : Dict, optional
         kwargs are stored as class attributes to be used in the ``get_inference_data`` method.
-    log_lik_kwargs : dict, optional
+    log_lik_kwargs : Dict, optional
         Keyword arguments passed to ``log_lik_fun``.
-    apply_ufunc_kwargs : dict, optional
+    apply_ufunc_kwargs : Dict, optional
         Passed to :func:`xarray:xarray.apply_ufunc` or :func:`wrap_xarray_ufunc`.
 
 

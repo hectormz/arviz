@@ -470,7 +470,7 @@ class InferenceData(Mapping[str, xr.Dataset]):
             If "like", interpret groups as substrings of the real group or metagroup names.
             If "regex", interpret groups as regular expressions on the real group or
             metagroup names. A la `pandas.filter`.
-        kwargs : dict
+        kwargs : Dict
             kwargs passed to json.dump()
 
         Returns
@@ -902,7 +902,7 @@ class InferenceData(Mapping[str, xr.Dataset]):
 
         Parameters
         ----------
-        dimensions: dict
+        dimensions: Dict
             Names of new dimensions, and the existing dimensions that they replace.
         groups: str or list of str, optional
             Groups where the selection is to be applied. Can either be group names
@@ -1089,7 +1089,7 @@ class InferenceData(Mapping[str, xr.Dataset]):
 
         Parameters
         ----------
-        name_dict: dict
+        name_dict: Dict
             Dictionary whose keys are current variable or dimension names
             and whose values are the desired names.
         groups: str or list of str, optional
@@ -1162,7 +1162,7 @@ class InferenceData(Mapping[str, xr.Dataset]):
 
         Parameters
         ----------
-        name_dict: dict
+        name_dict: Dict
             Dictionary whose keys are current variable or coordinate names
             and whose values are the desired names.
         groups: str or list of str, optional
@@ -1236,7 +1236,7 @@ class InferenceData(Mapping[str, xr.Dataset]):
 
         Parameters
         ----------
-        name_dict: dict
+        name_dict: Dict
             Dictionary whose keys are current dimension names and whose values are the desired
             names.
         groups: str or list of str, optional
@@ -1305,11 +1305,11 @@ class InferenceData(Mapping[str, xr.Dataset]):
 
         Parameters
         ----------
-        group_dict: dict of {str : dict or xarray.Dataset}, optional
+        group_dict: Dict of {str : Dict or xarray.Dataset}, optional
             Groups to be added
-        coords : dict[str] -> ndarray
+        coords : Dict[str] -> ndarray
             Coordinates for the dataset
-        dims : dict[str] -> list[str]
+        dims : Dict[str] -> list[str]
             Dimensions of each variable. The keys are variable names, values are lists of
             coordinates.
         **kwargs: mapping

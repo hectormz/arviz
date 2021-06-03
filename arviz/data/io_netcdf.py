@@ -38,9 +38,9 @@ def to_netcdf(data, filename, *, group="posterior", coords=None, dims=None):
         name or path of the file to load trace
     group : str (optional)
         In case `data` is not InferenceData, this is the group it will be saved to
-    coords : dict (optional)
+    coords : Dict (optional)
         See `convert_to_inference_data`
-    dims : dict (optional)
+    dims : Dict (optional)
         See `convert_to_inference_data`
 
     Returns

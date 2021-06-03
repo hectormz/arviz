@@ -375,36 +375,36 @@ def from_dict(
 
     Parameters
     ----------
-    posterior : dict
-    posterior_predictive : dict
-    predictions: dict
-    sample_stats : dict
-    log_likelihood : dict
+    posterior : Dict
+    posterior_predictive : Dict
+    predictions: Dict
+    sample_stats : Dict
+    log_likelihood : Dict
         For stats functions, log likelihood data should be stored here.
-    prior : dict
-    prior_predictive : dict
-    observed_data : dict
-    constant_data : dict
-    predictions_constant_data: dict
-    warmup_posterior : dict
-    warmup_posterior_predictive : dict
-    warmup_predictions : dict
-    warmup_log_likelihood : dict
-    warmup_sample_stats : dict
+    prior : Dict
+    prior_predictive : Dict
+    observed_data : Dict
+    constant_data : Dict
+    predictions_constant_data: Dict
+    warmup_posterior : Dict
+    warmup_posterior_predictive : Dict
+    warmup_predictions : Dict
+    warmup_log_likelihood : Dict
+    warmup_sample_stats : Dict
     save_warmup : bool
         Save warmup iterations InferenceData object. If not defined, use default
         defined by the rcParams.
     index_origin: int, optional
-    coords : dict[str, Iterable]
+    coords : Dict[str, Iterable]
         A dictionary containing the values that are used as index. The key
         is the name of the dimension, the values are the index values.
-    dims : dict[str, List(str)]
+    dims : Dict[str, List(str)]
         A mapping from variables to a list of coordinate names for the variable.
-    pred_dims : dict[str, List(str)]
+    pred_dims : Dict[str, List(str)]
         A mapping from variables to a list of coordinate names for predictions.
-    pred_coords : dict[str, List(str)]
+    pred_coords : Dict[str, List(str)]
         A mapping from variables to a list of coordinate values for predictions.
-    attrs : dict
+    attrs : Dict
         A dictionary containing attributes for different groups.
 
     Returns

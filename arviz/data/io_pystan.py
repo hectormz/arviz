@@ -945,7 +945,7 @@ def from_pystan(
     predictions_constant_data : str or list of str
         Constants relevant to the model predictions (i.e. new x values in a linear
         regression).
-    log_likelihood : dict of {str: str}, list of str or str, optional
+    log_likelihood : Dict of {str: str}, list of str or str, optional
         Pointwise log_likelihood for the data. log_likelihood is extracted from the
         posterior. It is recommended to use this argument as a dictionary whose keys
         are observed variable names and its values are the variables storing log
@@ -954,10 +954,10 @@ def from_pystan(
         present in the Stan model, it will be retrieved as pointwise log
         likelihood values. Use ``False`` or set ``data.log_likelihood`` to
         false to avoid this behaviour.
-    coords : dict[str, Iterable]
+    coords : Dict[str, Iterable]
         A dictionary containing the values that are used as index. The key
         is the name of the dimension, the values are the index values.
-    dims : dict[str, List(str)]
+    dims : Dict[str, List(str)]
         A mapping from variables to a list of coordinate names for the variable.
     posterior_model : stan.model.Model
         PyStan3 specific model object. Needed for automatic dtype parsing
@@ -967,7 +967,7 @@ def from_pystan(
     save_warmup : bool
         Save warmup iterations into InferenceData object. If not defined, use default
         defined by the rcParams. Not supported in PyStan3.
-    dtypes: dict
+    dtypes: Dict
         A dictionary containing dtype information (int, float) for parameters.
         By default dtype information is extracted from the model code.
         Model code is extracted from fit object in PyStan 2 and from model object

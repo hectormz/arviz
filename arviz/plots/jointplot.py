@@ -65,9 +65,9 @@ def plot_joint(
         If True plot the 2D KDE using contours, otherwise plot a smooth 2D KDE. Defaults to True.
     fill_last: bool
         If True fill the last contour of the 2D KDE plot. Defaults to True.
-    joint_kwargs: dicts, optional
+    joint_kwargs: Dicts, optional
         Additional keywords modifying the join distribution (central subplot)
-    marginal_kwargs: dicts, optional
+    marginal_kwargs: Dicts, optional
         Additional keywords modifying the marginals distributions (top and right subplot)
     ax: tuple of axes, optional
         Tuple containing (ax_joint, ax_hist_x, ax_hist_y). If None, a new figure and axes

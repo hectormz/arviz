@@ -94,33 +94,33 @@ def plot_pair(
         Read the :ref:`label_guide` for more details and usage examples.
     ax: axes, optional
         Matplotlib axes or bokeh figures.
-    divergences_kwargs: dicts, optional
+    divergences_kwargs: Dicts, optional
         Additional keywords passed to ax.scatter for divergences
     scatter_kwargs:
         Additional keywords passed to ax.plot when using scatter kind
-    kde_kwargs: dict, optional
+    kde_kwargs: Dict, optional
         Additional keywords passed to az.plot_kde when using kde kind
-    hexbin_kwargs: dict, optional
+    hexbin_kwargs: Dict, optional
         Additional keywords passed to ax.hexbin when using hexbin kind
     backend: str, optional
         Select plotting backend {"matplotlib","bokeh"}. Default "matplotlib".
     backend_kwargs: bool, optional
         These are kwargs specific to the backend being used. For additional documentation
         check the plotting method of the backend.
-    marginal_kwargs: dict, optional
+    marginal_kwargs: Dict, optional
         Additional keywords passed to az.plot_dist, modifying the marginal distributions
         plotted in the diagonal.
     point_estimate: str, optional
         Select point estimate from 'mean', 'mode' or 'median'. The point estimate will be
         plotted using a scatter marker and vertical/horizontal lines.
-    point_estimate_kwargs: dict, optional
+    point_estimate_kwargs: Dict, optional
         Additional keywords passed to ax.vline, ax.hline (matplotlib) or ax.square, Span (bokeh)
-    point_estimate_marker_kwargs: dict, optional
+    point_estimate_marker_kwargs: Dict, optional
         Additional keywords passed to ax.scatter in point estimate plot. Not available in bokeh
-    reference_values: dict, optional
+    reference_values: Dict, optional
         Reference values for the plotted variables. The Reference values will be plotted
         using a scatter marker
-    reference_values_kwargs: dict, optional
+    reference_values_kwargs: Dict, optional
         Additional keywords passed to ax.plot or ax.circle in reference values plot
     show: bool, optional
         Call backend show function.

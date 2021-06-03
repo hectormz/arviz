@@ -59,7 +59,7 @@ def plot_trace(
         interpret var_names as substrings of the real variables names. If "regex",
         interpret var_names as regular expressions on the real variables names. A la
         `pandas.filter`.
-    coords: dict of {str: slice or array_like}, optional
+    coords: Dict of {str: slice or array_like}, optional
         Coordinates of var_names to be plotted. Passed to `Dataset.sel`
     divergences: {"bottom", "top", None}, optional
         Plot location of divergences on the traceplots.
@@ -91,22 +91,22 @@ def plot_trace(
         Tuple containing the property name and the property values to distinguish different chains
     legend: bool, optional
         Add a legend to the figure with the chain color code.
-    plot_kwargs, fill_kwargs, rug_kwargs, hist_kwargs: dict, optional
+    plot_kwargs, fill_kwargs, rug_kwargs, hist_kwargs: Dict, optional
         Extra keyword arguments passed to `arviz.plot_dist`. Only affects continuous variables.
-    trace_kwargs: dict, optional
+    trace_kwargs: Dict, optional
         Extra keyword arguments passed to `plt.plot`
     labeller : labeller instance, optional
         Class providing the method `make_label_vert` to generate the labels in the plot titles.
         Read the :ref:`label_guide` for more details and usage examples.
-    rank_kwargs : dict, optional
+    rank_kwargs : Dict, optional
         Extra keyword arguments passed to `arviz.plot_rank`
     axes: axes, optional
         Matplotlib axes or bokeh figures.
     backend: {"matplotlib", "bokeh"}, optional
         Select plotting backend.
-    backend_config: dict, optional
+    backend_config: Dict, optional
         Currently specifies the bounds to use for bokeh axes. Defaults to value set in rcParams.
-    backend_kwargs: dict, optional
+    backend_kwargs: Dict, optional
         These are kwargs specific to the backend being used. For additional documentation
         check the plotting method of the backend.
     show: bool, optional

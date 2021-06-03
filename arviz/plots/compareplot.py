@@ -55,7 +55,7 @@ def plot_compare(
     labeller : labeller instance, optional
         Class providing the method `model_name_to_str` to generate the labels in the plot.
         Read the :ref:`label_guide` for more details and usage examples.
-    plot_kwargs : dict, optional
+    plot_kwargs : Dict, optional
         Optional arguments for plot elements. Currently accepts 'color_ic',
         'marker_ic', 'color_insample_dev', 'marker_insample_dev', 'color_dse',
         'marker_dse', 'ls_min_ic' 'color_ls_min_ic',  'fontsize'

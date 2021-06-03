@@ -49,7 +49,7 @@ def plot_mcse(
         interpret var_names as substrings of the real variables names. If "regex",
         interpret var_names as regular expressions on the real variables names. A la
         `pandas.filter`.
-    coords: dict, optional
+    coords: Dict, optional
         Coordinates of var_names to be plotted. Passed to `Dataset.sel`
     errorbar: bool, optional
         Plot quantile value +/- mcse instead of plotting mcse.
@@ -77,11 +77,11 @@ def plot_mcse(
     ax: numpy array-like of matplotlib axes or bokeh figures, optional
         A 2D array of locations into which to plot the densities. If not supplied, Arviz will create
         its own array of plot areas (and return it).
-    rug_kwargs: dict
+    rug_kwargs: Dict
         kwargs passed to rug plot.
-    extra_kwargs: dict, optional
+    extra_kwargs: Dict, optional
         kwargs passed to ax.plot for extra methods lines.
-    text_kwargs: dict, optional
+    text_kwargs: Dict, optional
         kwargs passed to ax.annotate for extra methods lines labels. It accepts the additional
         key ``x`` to set ``xy=(text_kwargs["x"], mcse)``
     backend: str, optional

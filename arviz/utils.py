@@ -724,7 +724,7 @@ class Dask:
 
         Parameters
         ----------
-        dask_kwargs : dict
+        dask_kwargs : Dict
             Dask related kwargs passed to :func:`~arviz.wrap_xarray_ufunc`.
         """
         cls.dask_flag = True

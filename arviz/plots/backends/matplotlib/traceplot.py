@@ -77,17 +77,17 @@ def plot_trace(
         plotted separately.
     legend : bool
         Add a legend to the figure with the chain color code.
-    plot_kwargs : dict
+    plot_kwargs : Dict
         Extra keyword arguments passed to `arviz.plot_dist`. Only affects continuous variables.
-    fill_kwargs : dict
+    fill_kwargs : Dict
         Extra keyword arguments passed to `arviz.plot_dist`. Only affects continuous variables.
-    rug_kwargs : dict
+    rug_kwargs : Dict
         Extra keyword arguments passed to `arviz.plot_dist`. Only affects continuous variables.
-    hist_kwargs : dict
+    hist_kwargs : Dict
         Extra keyword arguments passed to `arviz.plot_dist`. Only affects discrete variables.
-    trace_kwargs : dict
+    trace_kwargs : Dict
         Extra keyword arguments passed to `plt.plot`
-    rank_kwargs : dict
+    rank_kwargs : Dict
         Extra keyword arguments passed to `arviz.plot_rank`
     Returns
     -------

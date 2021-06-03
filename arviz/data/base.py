@@ -88,7 +88,7 @@ def generate_dims_coords(
         ``"foo_dim_0"`` for the first dimension if ``var_name`` is ``"foo"``.
     dims : list
         List of dimensions for the variable
-    coords : dict[str] -> list[str]
+    coords : Dict[str] -> list[str]
         Map of dimensions to coordinates
     default_dims : list[str]
         Dimension names that are not part of the variable's shape. For example,
@@ -189,7 +189,7 @@ def numpy_to_data_array(
         single dimension to the front if there is only 1 chain.
     var_name : str
         If there are no dims passed, this string is used to name dimensions
-    coords : dict[str, Iterable]
+    coords : Dict[str, Iterable]
         A dictionary containing the values that are used as index. The key
         is the name of the dimension, the values are the index values.
     dims : List(str)
@@ -265,15 +265,15 @@ def dict_to_dataset(
 
     Parameters
     ----------
-    data : dict[str] -> ndarray
+    data : Dict[str] -> ndarray
         Data to convert. Keys are variable names.
-    attrs : dict
+    attrs : Dict
         Json serializable metadata to attach to the dataset, in addition to defaults.
     library : module
         Library used for performing inference. Will be attached to the attrs metadata.
-    coords : dict[str] -> ndarray
+    coords : Dict[str] -> ndarray
         Coordinates for the dataset
-    dims : dict[str] -> list[str]
+    dims : Dict[str] -> list[str]
         Dimensions of each variable. The keys are variable names, values are lists of
         coordinates.
     default_dims : list of str, optional
@@ -317,7 +317,7 @@ def make_attrs(attrs=None, library=None):
 
     Parameters
     ----------
-    attrs : dict (optional)
+    attrs : Dict (optional)
         Additional attributes to add or overwrite
 
     Returns
@@ -419,7 +419,7 @@ def _extend_xr_method(func, doc="", description="", examples="", see_also=""):
     return wrapped
 
 
-def _make_json_serializable(data: dict) -> dict:
+def _make_json_serializable(data: Dict) -> dict:
     """Convert `data` with numpy.ndarray-like values to JSON-serializable form."""
     ret = dict()
     for key, value in data.items():

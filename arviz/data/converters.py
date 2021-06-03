@@ -22,7 +22,7 @@ def convert_to_inference_data(obj, *, group="posterior", coords=None, dims=None,
 
     Parameters
     ----------
-    obj : dict, str, np.ndarray, xr.Dataset, pystan fit, pymc3 trace
+    obj : Dict, str, np.ndarray, xr.Dataset, pystan fit, pymc3 trace
         A supported object to convert to InferenceData:
             | InferenceData: returns unchanged
             | str: Attempts to load the cmdstan csv or netcdf dataset from disk
@@ -41,10 +41,10 @@ def convert_to_inference_data(obj, *, group="posterior", coords=None, dims=None,
     group : str
         If `obj` is a dict or numpy array, assigns the resulting xarray
         dataset to this group. Default: "posterior".
-    coords : dict[str, Iterable]
+    coords : Dict[str, Iterable]
         A dictionary containing the values that are used as index. The key
         is the name of the dimension, the values are the index values.
-    dims : dict[str, List(str)]
+    dims : Dict[str, List(str)]
         A mapping from variables to a list of coordinate names for the variable
     kwargs
         Rest of the supported keyword arguments transferred to conversion function.
@@ -149,7 +149,7 @@ def convert_to_dataset(obj, *, group="posterior", coords=None, dims=None):
 
     Parameters
     ----------
-    obj : dict, str, np.ndarray, xr.Dataset, pystan fit, pymc3 trace
+    obj : Dict, str, np.ndarray, xr.Dataset, pystan fit, pymc3 trace
         A supported object to convert to InferenceData:
 
         - InferenceData: returns unchanged
@@ -166,10 +166,10 @@ def convert_to_dataset(obj, *, group="posterior", coords=None, dims=None):
     group : str
         If `obj` is a dict or numpy array, assigns the resulting xarray
         dataset to this group.
-    coords : dict[str, Iterable]
+    coords : Dict[str, Iterable]
         A dictionary containing the values that are used as index. The key
         is the name of the dimension, the values are the index values.
-    dims : dict[str, List(str)]
+    dims : Dict[str, List(str)]
         A mapping from variables to a list of coordinate names for the variable
 
     Returns

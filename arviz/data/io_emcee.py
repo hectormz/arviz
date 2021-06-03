@@ -299,9 +299,9 @@ def from_emcee(
         should be assigned respectively. If blob_names!=None
         and blob_groups is None, all variables are assigned
         to log_likelihood group
-    coords : dict[str] -> list[str] (Optional)
+    coords : Dict[str] -> list[str] (Optional)
         Map of dimensions to coordinates
-    dims : dict[str] -> list[str] (Optional)
+    dims : Dict[str] -> list[str] (Optional)
         Map variable names to their coordinates
 
     Returns

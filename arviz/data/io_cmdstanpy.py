@@ -605,7 +605,7 @@ def _unpack_fit(fit, items, save_warmup, dtypes):
     data: cmdstanpy.CmdStanMCMC
     items: list
     save_warmup: bool
-    dtypes: dict
+    dtypes: Dict
 
     Returns
     -------
@@ -660,7 +660,7 @@ def _unpack_frame(fit, columns, valid_cols, save_warmup, dtypes):
     columns: list
     valid_cols: list
     save_warmup: bool
-    dtypes: dict
+    dtypes: Dict
 
     Returns
     -------
@@ -778,11 +778,11 @@ def from_cmdstanpy(
         CmdStanPy CmdStanMCMC
     prior_predictive : str, list of str
         Prior predictive samples for the fit.
-    observed_data : dict
+    observed_data : Dict
         Observed data used in the sampling.
-    constant_data : dict
+    constant_data : Dict
         Constant data used in the sampling.
-    predictions_constant_data : dict
+    predictions_constant_data : Dict
         Constant data for predictions used in the sampling.
     log_likelihood : str, list of str, dict of {str: str}, optional
         Pointwise log_likelihood for the data. If a dict, its keys should represent var_names
@@ -796,12 +796,12 @@ def from_cmdstanpy(
     coords : Dict[str] or Dict[Iterable]
         A dictionary containing the values that are used as index. The key
         is the name of the dimension, the values are the index values.
-    dims : dict of str or list of str
+    dims : Dict of str or list of str
         A mapping from variables to a list of coordinate names for the variable.
     save_warmup : bool
         Save warmup iterations into InferenceData object, if found in the input files.
         If not defined, use default defined by the rcParams.
-    dtypes : dict or str or cmdstanpy.CmdStanModel
+    dtypes : Dict or str or cmdstanpy.CmdStanModel
         A dictionary containing dtype information (int, float) for parameters.
         If input is a string, it is assumed to be a model code or path to model code file.
         Model code can extracted from cmdstanpy.CmdStanModel object.

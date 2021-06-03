@@ -56,7 +56,7 @@ def plot_ess(
         Options: ``local``, ``quantile`` or ``evolution``, specify the kind of plot.
     relative: bool
         Show relative ess in plot ``ress = ess / N``.
-    coords: dict, optional
+    coords: Dict, optional
         Coordinates of var_names to be plotted. Passed to `Dataset.sel`
     grid : tuple
         Number of rows and columns. Defaults to None, the rows and columns are
@@ -83,16 +83,16 @@ def plot_ess(
     ax: numpy array-like of matplotlib axes or bokeh figures, optional
         A 2D array of locations into which to plot the densities. If not supplied, Arviz will create
         its own array of plot areas (and return it).
-    extra_kwargs: dict, optional
+    extra_kwargs: Dict, optional
         If evolution plot, extra_kwargs is used to plot ess tail and differentiate it
         from ess bulk. Otherwise, passed to extra methods lines.
-    text_kwargs: dict, optional
+    text_kwargs: Dict, optional
         Only taken into account when ``extra_methods=True``. kwargs passed to ax.annotate
         for extra methods lines labels. It accepts the additional
         key ``x`` to set ``xy=(text_kwargs["x"], mcse)``
-    hline_kwargs: dict, optional
+    hline_kwargs: Dict, optional
         kwargs passed to ax.axhline for the horizontal minimum ESS line.
-    rug_kwargs: dict
+    rug_kwargs: Dict
         kwargs passed to rug plot.
     backend: str, optional
         Select plotting backend {"matplotlib","bokeh"}. Default "matplotlib".

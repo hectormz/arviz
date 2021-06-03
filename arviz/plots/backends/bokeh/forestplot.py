@@ -366,7 +366,7 @@ class PlotHandler:
             Defaults to None.
         ax : Axes
             Axes to draw on
-        plotted : dict
+        plotted : Dict
             Contains glyphs for each model
         """
         if alpha is None:
@@ -473,7 +473,7 @@ class PlotHandler:
             Size of marker in center of forestplot line
         ax : Axes
             Axes to draw on
-        plotted : dict
+        plotted : Dict
             Contains glyphs for each model
         """
         if rope is None or isinstance(rope, dict):

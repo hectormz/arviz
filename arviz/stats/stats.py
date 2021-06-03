@@ -67,7 +67,7 @@ def compare(
 
     Parameters
     ----------
-    dataset_dict: dict[str] -> InferenceData
+    dataset_dict: Dict[str] -> InferenceData
         A dictionary of model names and InferenceData objects
     ic: str, optional
         Information Criterion (PSIS-LOO `loo` or WAIC `waic`) used to compare models. Defaults to
@@ -402,9 +402,9 @@ def hdi(
         Specifies the subset over to calculate hdi.
     max_modes: int, optional
         Specifies the maximum number of modes for multimodal case.
-    dask_kwargs : dict, optional
+    dask_kwargs : Dict, optional
         Dask related kwargs passed to :func:`~arviz.wrap_xarray_ufunc`.
-    kwargs: dict, optional
+    kwargs: Dict, optional
         Additional keywords passed to :func:`~arviz.wrap_xarray_ufunc`.
 
     Returns
@@ -1053,7 +1053,7 @@ def summary(
         Number of decimals used to round results. Defaults to 2. Use "none" to return raw numbers.
     circ_var_names: list
         A list of circular variables to compute circular stats for
-    stat_funcs: dict
+    stat_funcs: Dict
         A list of functions or a dict of functions with function names as keys used to calculate
         statistics. By default, the mean, standard deviation, simulation standard error, and
         highest posterior density intervals are included.
@@ -1380,7 +1380,7 @@ def waic(data, pointwise=None, var_name=None, scale=None, dask_kwargs=None):
 
         A higher log-score (or a lower deviance or negative log_score) indicates a model with
         better predictive accuracy.
-    dask_kwargs : dict, optional
+    dask_kwargs : Dict, optional
         Dask related kwargs passed to :func:`~arviz.wrap_xarray_ufunc`.
 
     Returns
@@ -1520,7 +1520,7 @@ def loo_pit(idata=None, *, y=None, y_hat=None, log_weights=None):
         equal to y, thus, y must be str too.
     log_weights: array or DataArray
         Smoothed log_weights. It must have the same shape as ``y_hat``
-    dask_kwargs : dict, optional
+    dask_kwargs : Dict, optional
         Dask related kwargs passed to :func:`~arviz.wrap_xarray_ufunc`.
 
     Returns
@@ -1683,7 +1683,7 @@ def apply_test_function(
     group: str, optional
         Group on which to apply the test function. Can be observed_data, posterior_predictive
         or both.
-    var_names: dict group -> var_names, optional
+    var_names: Dict group -> var_names, optional
         Mapping from group name to the variables to be passed to func. It can be a dict of
         strings or lists of strings. There is also the option of using ``both`` as key,
         in which case, the same variables are used in observed data and posterior predictive

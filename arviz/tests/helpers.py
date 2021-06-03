@@ -210,7 +210,7 @@ def check_multiple_attrs(
 
     Parameters
     ----------
-    test_dict: dict of {str : list of str}
+    test_dict: Dict of {str : list of str}
         Its structure should be `{dataset1_name: [var1, var2], dataset2_name: [var]}`.
         A ``~`` at the beginning of a dataset or variable name indicates the name NOT
         being present must be asserted.

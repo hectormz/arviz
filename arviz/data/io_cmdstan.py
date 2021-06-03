@@ -964,10 +964,10 @@ def from_cmdstan(
     index_origin : int, optional
         Starting value of integer coordinate values. Defaults to the value in rcParam
         ``data.index_origin``.
-    coords : dict of {str: array_like}, optional
+    coords : Dict of {str: array_like}, optional
         A dictionary containing the values that are used as index. The key
         is the name of the dimension, the values are the index values.
-    dims : dict of {str: list of str, optional
+    dims : Dict of {str: list of str, optional
         A mapping from variables to a list of coordinate names for the variable.
     disable_glob : bool
         Don't use glob for string input. This means that all string input is
@@ -975,7 +975,7 @@ def from_cmdstan(
     save_warmup : bool
         Save warmup iterations into InferenceData object, if found in the input files.
         If not defined, use default defined by the rcParams.
-    dtypes : dict or str
+    dtypes : Dict or str
         A dictionary containing dtype information (int, float) for parameters.
         If input is a string, it is assumed to be a model code or path to model code file.
 

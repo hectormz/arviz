@@ -52,19 +52,19 @@ def plot_hdi(
         If True the result will be smoothed by first computing a linear interpolation of the data
         over a regular grid and then applying the Savitzky-Golay filter to the interpolated data.
         Defaults to True.
-    smooth_kwargs : dict, optional
+    smooth_kwargs : Dict, optional
         Additional keywords modifying the Savitzky-Golay filter. See
         :func:`scipy:scipy.signal.savgol_filter` for details.
     figsize : tuple
         Figure size. If None it will be defined automatically.
-    fill_kwargs : dict, optional
+    fill_kwargs : Dict, optional
         Keywords passed to :meth:`mpl:matplotlib.axes.Axes.fill_between`
         (use fill_kwargs={'alpha': 0} to disable fill) or to
         :meth:`bokeh:bokeh.plotting.figure.Figure.patch`.
-    plot_kwargs : dict, optional
+    plot_kwargs : Dict, optional
         HDI limits keyword arguments, passed to :meth:`mpl:matplotlib.axes.Axes.plot` or
         :meth:`bokeh:bokeh.plotting.figure.Figure.patch`.
-    hdi_kwargs : dict, optional
+    hdi_kwargs : Dict, optional
         Keyword arguments passed to :func:`~arviz.hdi`. Ignored if ``hdi_data`` is present.
     ax : axes, optional
         Matplotlib axes or bokeh figures.

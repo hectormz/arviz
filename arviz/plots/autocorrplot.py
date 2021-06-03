@@ -63,9 +63,9 @@ def plot_autocorr(
         its own array of plot areas (and return it).
     backend: str, optional
         Select plotting backend {"matplotlib","bokeh"}. Default "matplotlib".
-    backend_config: dict, optional
+    backend_config: Dict, optional
         Currently specifies the bounds to use for bokeh axes. Defaults to value set in rcParams.
-    backend_kwargs: dict, optional
+    backend_kwargs: Dict, optional
         These are kwargs specific to the backend being used. For additional documentation
         check the plotting method of the backend.
     show: bool, optional

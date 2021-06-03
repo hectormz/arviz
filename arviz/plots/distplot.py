@@ -81,22 +81,22 @@ def plot_dist(
     textsize: float
         Text size scaling factor for labels, titles and lines. If None it will be autoscaled based
         on figsize. Not implemented for bokeh backend.
-    plot_kwargs : dict
+    plot_kwargs : Dict
         Keywords passed to the pdf line of a 1D KDE.
-    fill_kwargs : dict
+    fill_kwargs : Dict
         Keywords passed to the fill under the line (use fill_kwargs={'alpha': 0} to disable fill).
         Ignored for 2D KDE
-    rug_kwargs : dict
+    rug_kwargs : Dict
         Keywords passed to the rug plot. Ignored if rug=False or for 2D KDE
         Use `space` keyword (float) to control the position of the rugplot. The larger this number
         the lower the rugplot.
-    contour_kwargs : dict
+    contour_kwargs : Dict
         Keywords passed to the contourplot. Ignored for 1D KDE.
-    contourf_kwargs : dict
+    contourf_kwargs : Dict
         Keywords passed to ax.contourf. Ignored for 1D KDE.
-    pcolormesh_kwargs : dict
+    pcolormesh_kwargs : Dict
         Keywords passed to ax.pcolormesh. Ignored for 1D KDE.
-    hist_kwargs : dict
+    hist_kwargs : Dict
         Keywords passed to the histogram.
     is_circular : {False, True, "radians", "degrees"}. Default False.
         Select input type {"radians", "degrees"} for circular histogram or KDE plot. If True,

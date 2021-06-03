@@ -46,7 +46,7 @@ def plot_dist_comparison(
     var_names : str, list, list of lists
         if str, plot the variable. if list, plot all the variables in list
         of all groups. if list of lists, plot the vars of groups in respective lists.
-    coords : dict
+    coords : Dict
         Dictionary mapping dimensions to selected coordinates to be plotted.
         Dimensions without a mapping specified will include all coordinates for
         that dimension.
@@ -61,11 +61,11 @@ def plot_dist_comparison(
         Matplotlib axes: The ax argument should have shape (nvars, 3), where the
         last column is for the combined before/after plots and columns 0 and 1 are
         for the before and after plots, respectively.
-    prior_kwargs : dicts, optional
+    prior_kwargs : Dicts, optional
         Additional keywords passed to `arviz.plot_dist` for prior/predictive groups.
-    posterior_kwargs : dicts, optional
+    posterior_kwargs : Dicts, optional
         Additional keywords passed to `arviz.plot_dist` for posterior/predictive groups.
-    observed_kwargs : dicts, optional
+    observed_kwargs : Dicts, optional
         Additional keywords passed to `arviz.plot_dist` for observed_data group.
     backend: str, optional
         Select plotting backend {"matplotlib","bokeh"}. Default "matplotlib".

@@ -53,9 +53,9 @@ def plot_energy(
     textsize: float
         Text size scaling factor for labels, titles and lines. If None it will be autoscaled based
         on figsize.
-    fill_kwargs : dicts, optional
+    fill_kwargs : Dicts, optional
         Additional keywords passed to `arviz.plot_kde` (to control the shade)
-    plot_kwargs : dicts, optional
+    plot_kwargs : Dicts, optional
         Additional keywords passed to `arviz.plot_kde` or `plt.hist` (if type='hist')
     ax: axes, optional
         Matplotlib axes or bokeh figures.

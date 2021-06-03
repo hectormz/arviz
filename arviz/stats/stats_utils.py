@@ -193,7 +193,7 @@ def wrap_xarray_ufunc(
     ----------
     ufunc : callable
     datasets : xarray.dataset
-    ufunc_kwargs : dict
+    ufunc_kwargs : Dict
         Keyword arguments passed to `make_ufunc`.
             - 'n_dims', int, by default 2
             - 'n_output', int, by default 1
@@ -202,10 +202,10 @@ def wrap_xarray_ufunc(
             - 'ravel', bool, by default True
     func_args : tuple
         Arguments passed to 'ufunc'.
-    func_kwargs : dict
+    func_kwargs : Dict
         Keyword arguments passed to 'ufunc'.
             - 'out_shape', int, by default None
-    dask_kwargs : dict
+    dask_kwargs : Dict
         Dask related kwargs passed to :func:`xarray:xarray.apply_ufunc`.
         Use :meth:`~arviz.Dask.enable_dask` to set default kwargs.
     **kwargs
@@ -351,13 +351,13 @@ def not_valid(ary, check_nan=True, check_shape=True, nan_kwargs=None, shape_kwar
     check_shape : bool
         Check if array has correct shape. Assumes dimensions in order (chain, draw, *shape).
         For 1D arrays (shape = (n,)) assumes chain equals 1.
-    nan_kwargs : dict
+    nan_kwargs : Dict
         Valid kwargs are:
             axis : int,
                 Defaults to None.
             how : str, {"all", "any"}
                 Default to "any".
-    shape_kwargs : dict
+    shape_kwargs : Dict
         Valid kwargs are:
             min_chains : int
                 Defaults to 1.

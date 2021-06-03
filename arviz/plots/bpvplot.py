@@ -86,7 +86,7 @@ def plot_bpv(
     textsize : float
         Text size scaling factor for labels, titles and lines. If None it will be
         autoscaled based on figsize.
-    data_pairs : dict
+    data_pairs : Dict
         Dictionary containing relations between observed data and posterior/prior predictive data.
         Dictionary structure:
 
@@ -107,7 +107,7 @@ def plot_bpv(
         interpret var_names as substrings of the real variables names. If "regex",
         interpret var_names as regular expressions on the real variables names. A la
         `pandas.filter`.
-    coords : dict
+    coords : Dict
         Dictionary mapping dimensions to selected coordinates to be plotted.
         Dimensions without a mapping specified will include all coordinates for
         that dimension. Defaults to including all coordinates for all

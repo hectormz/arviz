@@ -68,7 +68,7 @@ def plot_ppc(
     textsize: float
         Text size scaling factor for labels, titles and lines. If None it will be
         autoscaled based on figsize.
-    data_pairs: dict
+    data_pairs: Dict
         Dictionary containing relations between observed data and posterior/prior predictive data.
         Dictionary structure:
 
@@ -86,7 +86,7 @@ def plot_ppc(
         interpret var_names as substrings of the real variables names. If "regex",
         interpret var_names as regular expressions on the real variables names. A la
         `pandas.filter`.
-    coords: dict
+    coords: Dict
         Dictionary mapping dimensions to selected coordinates to be plotted.
         Dimensions without a mapping specified will include all coordinates for
         that dimension. Defaults to including all coordinates for all
@@ -122,7 +122,7 @@ def plot_ppc(
         If you experience problems rendering the animation try setting
         `animation_kwargs({'blit':False}) or changing the matplotlib's backend (e.g. to TkAgg)
         If you run the animation from a script write `ax, ani = az.plot_ppc(.)`
-    animation_kwargs : dict
+    animation_kwargs : Dict
         Keywords passed to `animation.FuncAnimation`. Ignored with matploblib backend.
     legend : bool
         Add legend to figure. By default True.

@@ -43,22 +43,22 @@ class NumPyroConverter:
         ----------
         posterior : numpyro.mcmc.MCMC
             Fitted MCMC object from NumPyro
-        prior: dict
+        prior: Dict
             Prior samples from a NumPyro model
-        posterior_predictive : dict
+        posterior_predictive : Dict
             Posterior predictive samples for the posterior
-        predictions: dict
+        predictions: Dict
             Out of sample predictions
-        constant_data: dict
+        constant_data: Dict
             Dictionary containing constant data variables mapped to their values.
-        predictions_constant_data: dict
+        predictions_constant_data: Dict
             Constant data used for out-of-sample predictions.
         index_origin : int, optional
-        coords : dict[str] -> list[str]
+        coords : Dict[str] -> list[str]
             Map of dimensions to coordinates
-        dims : dict[str] -> list[str]
+        dims : Dict[str] -> list[str]
             Map variable names to their coordinates
-        pred_dims: dict
+        pred_dims: Dict
             Dims for predictions data. Map variable names to their coordinates.
         num_chains: int
             Number of chains used for sampling. Ignored if posterior is present.
@@ -340,22 +340,22 @@ def from_numpyro(
     ----------
     posterior : numpyro.mcmc.MCMC
         Fitted MCMC object from NumPyro
-    prior: dict
+    prior: Dict
         Prior samples from a NumPyro model
-    posterior_predictive : dict
+    posterior_predictive : Dict
         Posterior predictive samples for the posterior
-    predictions: dict
+    predictions: Dict
         Out of sample predictions
-    constant_data: dict
+    constant_data: Dict
         Dictionary containing constant data variables mapped to their values.
-    predictions_constant_data: dict
+    predictions_constant_data: Dict
         Constant data used for out-of-sample predictions.
     index_origin : int, optional
-    coords : dict[str] -> list[str]
+    coords : Dict[str] -> list[str]
         Map of dimensions to coordinates
-    dims : dict[str] -> list[str]
+    dims : Dict[str] -> list[str]
         Map variable names to their coordinates
-    pred_dims: dict
+    pred_dims: Dict
         Dims for predictions data. Map variable names to their coordinates.
     num_chains: int
         Number of chains used for sampling. Ignored if posterior is present.

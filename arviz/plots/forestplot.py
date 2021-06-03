@@ -61,7 +61,7 @@ def plot_forest(
         regular expressions on the real variables names. A la `pandas.filter`.
     transform: callable
         Function to transform data (defaults to None i.e.the identity function)
-    coords: dict, optional
+    coords: Dict, optional
         Coordinates of var_names to be plotted. Passed to `Dataset.sel`
     combined: bool
         Flag for combining multiple chains into a single chain. If False (default), chains will be
@@ -116,7 +116,7 @@ def plot_forest(
         Matplotlib axes or bokeh figures.
     backend: str, optional
         Select plotting backend {"matplotlib","bokeh"}. Default "matplotlib".
-    backend_config: dict, optional
+    backend_config: Dict, optional
         Currently specifies the bounds to use for bokeh axes. Defaults to value set in rcParams.
     backend_kwargs: bool, optional
         These are kwargs specific to the backend being used. For additional documentation

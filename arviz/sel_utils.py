@@ -14,7 +14,7 @@ def selection_to_string(selection):
 
     Parameters
     ----------
-    selection : dict[Any] -> Any
+    selection : Dict[Any] -> Any
 
     Returns
     -------
@@ -32,7 +32,7 @@ def make_label(var_name, selection, position="below"):
     var_name : str
        Name of the variable
 
-    selection : dict[Any] -> Any
+    selection : Dict[Any] -> Any
         Coordinates of the variable
     position : str
         Whether to position the coordinates' label "below" (default) or "beside"
@@ -113,7 +113,7 @@ def xarray_sel_iter(data, var_names=None, combined=False, skip_dims=None, revers
 
     Returns
     -------
-    Iterator of (var_name: str, selection: dict(str, any))
+    Iterator of (var_name: str, selection: Dict(str, any))
         The string is the variable name, the dictionary are coordinate names to values,.
         To get the values of the variable at these coordinates, do
         ``data[var_name].sel(**selection)``.

@@ -38,7 +38,7 @@ class StanSamplingWrapper(SamplingWrapper):
 
         Returns
         -------
-        modified_observed_data : dict
+        modified_observed_data : Dict
             Dictionary containing both excluded and included data but properly divided
             in the different keys. Passed to ``data`` argument of ``model.sampling``.
         excluded_observed_data : str

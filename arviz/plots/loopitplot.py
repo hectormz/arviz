@@ -79,14 +79,14 @@ def plot_loo_pit(
         Show the legend of the figure.
     ax: axes, optional
         Matplotlib axes or bokeh figures.
-    plot_kwargs : dict, optional
+    plot_kwargs : Dict, optional
         Additional keywords passed to ax.plot for LOO-PIT line (kde or ECDF)
-    plot_unif_kwargs : dict, optional
+    plot_unif_kwargs : Dict, optional
         Additional keywords passed to ax.plot for overlaid uniform distributions or
         for beta credible interval lines if ``ecdf=True``
-    hdi_kwargs : dict, optional
+    hdi_kwargs : Dict, optional
         Additional keywords passed to ax.axhspan
-    fill_kwargs : dict, optional
+    fill_kwargs : Dict, optional
         Additional kwargs passed to ax.fill_between
     backend: str, optional
         Select plotting backend {"matplotlib","bokeh"}. Default "matplotlib".
