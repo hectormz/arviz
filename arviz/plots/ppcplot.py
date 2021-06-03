@@ -78,7 +78,7 @@ def plot_ppc(
         For example, `data_pairs = {'y' : 'y_hat'}`
         If None, it will assume that the observed data and the posterior/prior
         predictive data have the same variable name.
-    var_names: list of variable names
+    var_names: List of variable names
         Variables to be plotted, if `None` all variable are plotted. Prefix the
         variables by `~` when you want to exclude them from the plot.
     filter_vars: {None, "like", "regex"}, optional, default=None
@@ -91,10 +91,10 @@ def plot_ppc(
         Dimensions without a mapping specified will include all coordinates for
         that dimension. Defaults to including all coordinates for all
         dimensions if None.
-    flatten: list
+    flatten: List
         List of dimensions to flatten in observed_data. Only flattens across the coordinates
         specified in the coords argument. Defaults to flattening all of the dimensions.
-    flatten_pp: list
+    flatten_pp: List
         List of dimensions to flatten in posterior_predictive/prior_predictive. Only flattens
         across the coordinates specified in the coords argument. Defaults to flattening all
         of the dimensions. Dimensions should match flatten excluding dimensions for data_pairs

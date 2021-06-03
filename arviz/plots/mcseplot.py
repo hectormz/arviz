@@ -41,7 +41,7 @@ def plot_mcse(
     idata: obj
         Any object that can be converted to an az.InferenceData object
         Refer to documentation of az.convert_to_dataset for details
-    var_names: list of variable names, optional
+    var_names: List of variable names, optional
         Variables to be plotted. Prefix the variables by `~` when you want to exclude
         them from the plot.
     filter_vars: {None, "like", "regex"}, optional, default=None

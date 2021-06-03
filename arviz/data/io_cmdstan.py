@@ -967,7 +967,7 @@ def from_cmdstan(
     coords : Dict of {str: array_like}, optional
         A dictionary containing the values that are used as index. The key
         is the name of the dimension, the values are the index values.
-    dims : Dict of {str: list of str, optional
+    dims : Dict of {str: List of str, optional
         A mapping from variables to a list of coordinate names for the variable.
     disable_glob : bool
         Don't use glob for string input. This means that all string input is

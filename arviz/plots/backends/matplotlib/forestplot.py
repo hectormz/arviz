@@ -305,7 +305,7 @@ class PlotHandler:
             histograms. To override this use "hist" to plot histograms and "density" for KDEs
         ridgeplot_truncate: bool
             Whether to truncate densities according to the value of hdi_prop. Defaults to True
-        ridgeplot_quantiles: list
+        ridgeplot_quantiles: List
             Quantiles in ascending order used to segment the KDE. Use [.25, .5, .75] for quartiles.
             Defaults to None.
         ax : Axes

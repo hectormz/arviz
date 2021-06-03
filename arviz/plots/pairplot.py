@@ -54,7 +54,7 @@ def plot_pair(
         Refer to documentation of az.convert_to_dataset for details
     group: str, optional
         Specifies which InferenceData group should be plotted.  Defaults to 'posterior'.
-    var_names: list of variable names, optional
+    var_names: List of variable names, optional
         Variables to be plotted, if None all variable are plotted. Prefix the
         variables by `~` when you want to exclude them from the plot.
     filter_vars: {None, "like", "regex"}, optional, default=None

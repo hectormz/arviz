@@ -69,7 +69,7 @@ def plot_dist(
         and "taylor" (for now) when `is_circular` is True.
         Defaults to "default" which means "experimental" when variable is not circular
         and "taylor" when it is.
-    quantiles : list
+    quantiles : List
         Quantiles in ascending order used to segment the KDE. Use [.25, .5, .75] for quartiles.
         Defaults to None.
     contour : bool

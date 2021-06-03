@@ -40,7 +40,7 @@ def plot_parallel(
     data: obj
         Any object that can be converted to an az.InferenceData object
         Refer to documentation of az.convert_to_dataset for details
-    var_names: list of variable names
+    var_names: List of variable names
         Variables to be plotted, if `None` all variable are plotted. Can be used to change the order
         of the plotted variables. Prefix the variables by `~` when you want to exclude
         them from the plot.

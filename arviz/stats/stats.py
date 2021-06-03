@@ -389,7 +389,7 @@ def hdi(
     group: str, optional
         Specifies which InferenceData group should be used to calculate hdi.
         Defaults to 'posterior'
-    var_names: list, optional
+    var_names: List, optional
         Names of variables to include in the hdi report. Prefix the variables by `~`
         when you want to exclude them from the report: `["~beta"]` instead of `["beta"]`
         (see `az.summary` for more details).
@@ -1029,7 +1029,7 @@ def summary(
     data: obj
         Any object that can be converted to an az.InferenceData object
         Refer to documentation of az.convert_to_dataset for details
-    var_names: list
+    var_names: List
         Names of variables to include in summary. Prefix the variables by `~` when you
         want to exclude them from the summary: `["~beta"]` instead of `["beta"]` (see
         examples below).
@@ -1051,7 +1051,7 @@ def summary(
         them.
     round_to: int
         Number of decimals used to round results. Defaults to 2. Use "none" to return raw numbers.
-    circ_var_names: list
+    circ_var_names: List
         A list of circular variables to compute circular stats for
     stat_funcs: Dict
         A list of functions or a dict of functions with function names as keys used to calculate

@@ -65,7 +65,7 @@ def plot_kde(
     adaptive: bool, optional.
         If True, an adaptative bandwidth is used. Only valid for 1D KDE.
         Defaults to False.
-    quantiles : list
+    quantiles : List
         Quantiles in ascending order used to segment the KDE.
         Use [.25, .5, .75] for quartiles. Defaults to None.
     rotated : bool
@@ -73,7 +73,7 @@ def plot_kde(
     contour : bool
         If True plot the 2D KDE using contours, otherwise plot a smooth 2D KDE.
         Defaults to True.
-    hdi_probs : list
+    hdi_probs : List
         Plots highest density credibility regions for the provided probabilities for a 2D KDE.
         Defaults to matplotlib chosen levels with no fixed probability associated.
     fill_last : bool
@@ -122,7 +122,7 @@ def plot_kde(
     -------
     axes : matplotlib.Axes or bokeh.plotting.Figure
         Object containing the kde plot
-    glyphs : list, optional
+    glyphs : List, optional
         Bokeh glyphs present in plot.  Only provided if ``return_glyph`` is True.
 
     Examples

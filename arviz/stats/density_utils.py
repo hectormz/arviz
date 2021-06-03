@@ -583,7 +583,7 @@ def _kde_linear(
     bw_return: bool, optional
         Whether to return the estimated bandwidth in addition to the
         other objects. Defaults to False.
-    custom_lims: list or tuple, optional
+    custom_lims: List or tuple, optional
         A list or tuple of length 2 indicating custom bounds
         for the range of `x`. Defaults to None which disables custom bounds.
     cumulative: bool, optional
@@ -677,7 +677,7 @@ def _kde_circular(
     bw_return: bool, optional
         Whether to return the estimated bandwidth in addition to the
         other objects. Defaults to False.
-    custom_lims: list or tuple, optional
+    custom_lims: List or tuple, optional
         A list or tuple of length 2 indicating custom bounds
         for the range of `x`. Defaults to None which means the estimation
         limits are [-pi, pi].

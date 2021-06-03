@@ -208,7 +208,7 @@ def xarray_to_ndarray(data, *, var_names=None, combined=True, label_fun=None):
 
     Returns
     -------
-    var_names: list
+    var_names: List
         List of variable names
     data: np.array
         Data values

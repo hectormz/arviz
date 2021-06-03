@@ -23,11 +23,11 @@ def _verify_names(sampler, var_names, arg_names, slices):
     ----------
     sampler : emcee.EnsembleSampler
         Fitted emcee sampler
-    var_names : list[str] or None
+    var_names : List[str] or None
         Names for the emcee parameters
-    arg_names : list[str] or None
+    arg_names : List[str] or None
         Names for the args/observations provided to emcee
-    slices : list[seq] or None
+    slices : List[seq] or None
         slices to select the variables (used for multidimensional variables)
 
     Returns
@@ -279,22 +279,22 @@ def from_emcee(
     ----------
     sampler : emcee.EnsembleSampler
         Fitted sampler from emcee.
-    var_names : list[str] (Optional)
+    var_names : List[str] (Optional)
         A list of names for variables in the sampler
-    slices : list[array-like] (Optional)
+    slices : List[array-like] (Optional)
         A list containing the indexes of each variable. Should only be used
         for multidimensional variables.
-    arg_names : list[str] (Optional)
+    arg_names : List[str] (Optional)
         A list of names for args in the sampler
-    arg_groups : list of str, optional
+    arg_groups : List of str, optional
         A list of the group names (either ``observed_data`` or ``constant_data``) where
         args in the sampler are stored. If None, all args will be stored in observed
         data group.
-    blob_names : list[str] (Optional)
+    blob_names : List[str] (Optional)
         A list of names for blobs in the sampler. When None,
         blobs are omitted, independently of them being present
         in the sampler or not.
-    blob_groups : list[str] (Optional)
+    blob_groups : List[str] (Optional)
         A list of the groups where blob_names variables
         should be assigned respectively. If blob_names!=None
         and blob_groups is None, all variables are assigned

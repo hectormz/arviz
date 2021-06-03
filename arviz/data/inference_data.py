@@ -365,7 +365,7 @@ class InferenceData(Mapping[str, xr.Dataset]):
         compress : bool, optional
             Whether to compress result. Note this saves disk space, but may make
             saving and loading somewhat slower (default: True).
-        groups : list, optional
+        groups : List, optional
             Write only these groups to netcdf file.
 
         Returns
@@ -398,7 +398,7 @@ class InferenceData(Mapping[str, xr.Dataset]):
 
         Parameters
         ----------
-        groups : list, optional
+        groups : List, optional
             Groups where the transformation is to be applied. Can either be group names
             or metagroup names.
         filter_groups: {None, "like", "regex"}, optional, default=None
@@ -462,7 +462,7 @@ class InferenceData(Mapping[str, xr.Dataset]):
         ----------
         filename : str
             Location to write to
-        groups : list, optional
+        groups : List, optional
             Groups where the transformation is to be applied. Can either be group names
             or metagroup names.
         filter_groups: {None, "like", "regex"}, optional, default=None
@@ -1444,7 +1444,7 @@ class InferenceData(Mapping[str, xr.Dataset]):
 
         Returns
         -------
-        groups: list
+        groups: List
         """
         all_groups = self._groups_all
         if groups is None:

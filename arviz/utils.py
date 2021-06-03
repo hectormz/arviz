@@ -32,7 +32,7 @@ def _var_names(var_names, data, filter_vars=None):
 
     Returns
     -------
-    var_name: list or None
+    var_name: List or None
     """
     if var_names is not None:
         if isinstance(data, (list, tuple)):
@@ -69,7 +69,7 @@ def _subset_list(subset, whole_list, filter_items=None, warn=True):
     Parameters
     ----------
     subset : str, list, or None
-    whole_list : list
+    whole_list : List
         List from which to select a subset according to subset elements and
         filter_items value.
     filter_items : {None, "like", "regex"}, optional

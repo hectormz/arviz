@@ -35,7 +35,7 @@ class SamplingWrapper:
     is_ufunc : bool, default True
         If True, call ``log_lik_fun`` using :func:`xarray:xarray.apply_ufunc` otherwise
         use :func:`wrap_xarray_ufunc`.
-    posterior_vars : list of str, optional
+    posterior_vars : List of str, optional
         List of variable names to unpack as ``args`` for ``log_lik_fun``. Each string in
         the list will be used to retrieve a DataArray from the Dataset in the posterior
         group and passed to ``log_lik_fun``.
@@ -205,7 +205,7 @@ class SamplingWrapper:
 
         Parameters
         ----------
-        methods: list
+        methods: List
             Check all elements in methods are implemented.
 
         Returns

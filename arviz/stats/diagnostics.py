@@ -227,7 +227,7 @@ def rhat(data, *, var_names=None, method="rank", dask_kwargs=None):
         stochastic parameters.
         For ndarray: shape = (chain, draw).
         For n-dimensional ndarray transform first to dataset with az.convert_to_dataset.
-    var_names : list
+    var_names : List
         Names of variables to include in the rhat report
     method : str
         Select R-hat method. Valid methods are:
@@ -332,7 +332,7 @@ def mcse(data, *, var_names=None, method="mean", prob=None, dask_kwargs=None):
         Refer to documentation of az.convert_to_dataset for details
         For ndarray: shape = (chain, draw).
         For n-dimensional ndarray transform first to dataset with az.convert_to_dataset.
-    var_names : list
+    var_names : List
         Names of variables to include in the rhat report
     method : str
         Select mcse method. Valid methods are:

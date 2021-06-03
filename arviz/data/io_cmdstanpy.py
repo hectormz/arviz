@@ -603,7 +603,7 @@ def _unpack_fit(fit, items, save_warmup, dtypes):
     Parameters
     ----------
     data: cmdstanpy.CmdStanMCMC
-    items: list
+    items: List
     save_warmup: bool
     dtypes: Dict
 
@@ -657,8 +657,8 @@ def _unpack_frame(fit, columns, valid_cols, save_warmup, dtypes):
     Parameters
     ----------
     data: cmdstanpy.CmdStanMCMC
-    columns: list
-    valid_cols: list
+    columns: List
+    valid_cols: List
     save_warmup: bool
     dtypes: Dict
 

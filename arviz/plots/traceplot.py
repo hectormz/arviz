@@ -72,7 +72,7 @@ def plot_trace(
     rug: bool, optional
         If True adds a rugplot of samples. Defaults to False. Ignored for 2D KDE.
         Only affects continuous variables.
-    lines: list of tuple of (str, dict, array_like), optional
+    lines: List of tuple of (str, dict, array_like), optional
         List of (var_name, {'coord': selection}, [line, positions]) to be overplotted as
         vertical lines on the density and horizontal lines on the trace.
     circ_var_names : str or list of str, optional

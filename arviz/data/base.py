@@ -86,11 +86,11 @@ def generate_dims_coords(
         Name of the variable. If no dimension name(s) is provided, ArviZ
         will generate a default dimension name using ``var_name``, e.g.,
         ``"foo_dim_0"`` for the first dimension if ``var_name`` is ``"foo"``.
-    dims : list
+    dims : List
         List of dimensions for the variable
     coords : Dict[str] -> list[str]
         Map of dimensions to coordinates
-    default_dims : list[str]
+    default_dims : List[str]
         Dimension names that are not part of the variable's shape. For example,
         when manipulating Monte Carlo traces, the ``default_dims`` would be
         ``["chain" , "draw"]`` which ArviZ uses as its own names for dimensions
@@ -194,7 +194,7 @@ def numpy_to_data_array(
         is the name of the dimension, the values are the index values.
     dims : List(str)
         A list of coordinate names for the variable
-    default_dims : list of str, optional
+    default_dims : List of str, optional
         Passed to :py:func:`generate_dims_coords`. Defaults to ``["chain", "draw"]``, and
         an empty list is accepted
     index_origin : int, optional
@@ -276,7 +276,7 @@ def dict_to_dataset(
     dims : Dict[str] -> list[str]
         Dimensions of each variable. The keys are variable names, values are lists of
         coordinates.
-    default_dims : list of str, optional
+    default_dims : List of str, optional
         Passed to :py:func:`numpy_to_data_array`
     index_origin : int, optional
         Passed to :py:func:`numpy_to_data_array`

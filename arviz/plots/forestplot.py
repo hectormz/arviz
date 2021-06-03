@@ -49,10 +49,10 @@ def plot_forest(
         Refer to documentation of az.convert_to_dataset for details
     kind: str
         Choose kind of plot for main axis. Supports "forestplot" or "ridgeplot"
-    model_names: list[str], optional
+    model_names: List[str], optional
         List with names for the models in the list of data. Useful when plotting more that one
         dataset
-    var_names: list[str], optional
+    var_names: List[str], optional
         List of variables to plot (defaults to None, which results in all variables plotted)
         Prefix the variables by `~` when you want to exclude them from the plot.
     filter_vars: {None, "like", "regex"}, optional, default=None
@@ -79,7 +79,7 @@ def plot_forest(
         Flag for plotting Split R-hat statistics. Requires 2 or more chains. Defaults to False
     ess: bool, optional
         Flag for plotting the effective sample size. Defaults to False
-    colors: list or string, optional
+    colors: List or string, optional
         list with valid matplotlib colors, one color per model. Alternative a string can be passed.
         If the string is `cycle`, it will automatically chose a color per model from the matplotlibs
         cycle. If a single color is passed, eg 'k', 'C2', 'red' this color will be used for all
@@ -107,7 +107,7 @@ def plot_forest(
         histograms. To override this use "hist" to plot histograms and "density" for KDEs
     ridgeplot_truncate: bool
         Whether to truncate densities according to the value of hdi_prop. Defaults to True
-    ridgeplot_quantiles: list
+    ridgeplot_quantiles: List
         Quantiles in ascending order used to segment the KDE. Use [.25, .5, .75] for quartiles.
         Defaults to None.
     figsize: tuple

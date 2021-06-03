@@ -562,7 +562,7 @@ def from_pymc3(
         Defaults to the value of rcParam ``data.log_likelihood``.
     coords : Dict of {str: array-like}, optional
         Map of coordinate names to coordinate values
-    dims : Dict of {str: list of str}, optional
+    dims : Dict of {str: List of str}, optional
         Map of variable names to the coordinate names to use to index its dimensions.
     model : pymc3.Model, optional
         Model used to generate ``trace``. It is not necessary to pass ``model`` if in
