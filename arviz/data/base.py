@@ -189,7 +189,7 @@ def numpy_to_data_array(
         single dimension to the front if there is only 1 chain.
     var_name : str
         If there are no dims passed, this string is used to name dimensions
-    coords : dict[str, iterable]
+    coords : dict[str, Iterable]
         A dictionary containing the values that are used as index. The key
         is the name of the dimension, the values are the index values.
     dims : List(str)

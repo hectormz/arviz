@@ -38,7 +38,7 @@ def plot_joint(
         Refer to documentation of az.convert_to_dataset for details
     group: str, optional
         Specifies which InferenceData group should be plotted. Defaults to ‘posterior’.
-    var_names: str or iterable of str
+    var_names: str or Iterable[str]
         Variables to be plotted. Iterable of two variables or one variable (with subset
         having exactly 2 dimensions) are required. Prefix the variables by `~` when you
         want to exclude them from the plot.

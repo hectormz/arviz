@@ -25,7 +25,7 @@ def mix_labellers(labellers, class_name="MixtureLabeller"):
 
     Parameters
     ----------
-    labellers : iterable of types
+    labellers : Iterable
         Iterable of Labeller types to combine
     class_name : str, optional
         The name of the generated class

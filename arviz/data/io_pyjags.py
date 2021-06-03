@@ -346,7 +346,7 @@ def from_pyjags(
         likelihood arrays in the JAGS code. In other cases, a dictionary with keys
         equal to its values is used.
 
-    coords: dict[str, iterable]
+    coords: dict[str, Iterable]
         A dictionary containing the values that are used as index. The key
         is the name of the dimension, the values are the index values.
 

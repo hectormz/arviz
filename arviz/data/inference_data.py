@@ -1005,7 +1005,7 @@ class InferenceData(Mapping[str, xr.Dataset]):
 
         Parameters
         ----------
-        dim: Hashable or iterable of Hashable, optional
+        dim: Hashable or Iterable[Hashable], optional
             Dimension(s) over which to unstack. By default unstacks all MultiIndexes.
         groups: str or list of str, optional
             Groups where the selection is to be applied. Can either be group names

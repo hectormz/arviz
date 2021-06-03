@@ -41,7 +41,7 @@ def convert_to_inference_data(obj, *, group="posterior", coords=None, dims=None,
     group : str
         If `obj` is a dict or numpy array, assigns the resulting xarray
         dataset to this group. Default: "posterior".
-    coords : dict[str, iterable]
+    coords : dict[str, Iterable]
         A dictionary containing the values that are used as index. The key
         is the name of the dimension, the values are the index values.
     dims : dict[str, List(str)]
@@ -166,7 +166,7 @@ def convert_to_dataset(obj, *, group="posterior", coords=None, dims=None):
     group : str
         If `obj` is a dict or numpy array, assigns the resulting xarray
         dataset to this group.
-    coords : dict[str, iterable]
+    coords : dict[str, Iterable]
         A dictionary containing the values that are used as index. The key
         is the name of the dimension, the values are the index values.
     dims : dict[str, List(str)]

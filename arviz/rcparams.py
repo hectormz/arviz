@@ -31,7 +31,7 @@ def _make_validate_choice(accepted_values, allow_none=False, typeof=str):
 
     Parameters
     ----------
-    accepted_values : iterable
+    accepted_values : Iterable
         Iterable containing all accepted_values.
     allow_none: boolean, optional
         Whether to accept ``None`` in addition to the values in ``accepted_values``.
@@ -69,9 +69,9 @@ def _make_validate_choice_regex(accepted_values, accepted_values_regex, allow_no
 
     Parameters
     ----------
-    accepted_values : iterable
+    accepted_values : Iterable
         Iterable containing all accepted_values.
-    accepted_values_regex : iterable
+    accepted_values_regex : Iterable
         Iterable containing all accepted_values with regex string.
     allow_none: boolean, optional
         Whether to accept ``None`` in addition to the values in ``accepted_values``.

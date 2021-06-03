@@ -954,7 +954,7 @@ def from_pystan(
         present in the Stan model, it will be retrieved as pointwise log
         likelihood values. Use ``False`` or set ``data.log_likelihood`` to
         false to avoid this behaviour.
-    coords : dict[str, iterable]
+    coords : dict[str, Iterable]
         A dictionary containing the values that are used as index. The key
         is the name of the dimension, the values are the index values.
     dims : dict[str, List(str)]

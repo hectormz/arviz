@@ -394,8 +394,8 @@ def from_dict(
     save_warmup : bool
         Save warmup iterations InferenceData object. If not defined, use default
         defined by the rcParams.
-    index_origin : int, optional
-    coords : dict[str, iterable]
+    index_origin: int, optional
+    coords : dict[str, Iterable]
         A dictionary containing the values that are used as index. The key
         is the name of the dimension, the values are the index values.
     dims : dict[str, List(str)]
