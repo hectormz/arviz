@@ -241,3 +241,4 @@ def plot_pair_extended(
             if (j != 0 and labels == "edges") or labels == "none":
                 ax[i, j].axes.get_yaxis().set_major_formatter(NullFormatter())
                 ax[i, j].set_ylabel("")
+    return ax
